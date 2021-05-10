@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { useDebounce } from 'use-debounce';
 
-const getAPI = (search) => `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&type=movie${ search ? `&s=${search}` : '' }`
+const getAPI = (search) => `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&type=movie${ search ? `&s=${search}` : '' }`
 const loadMovies = (search) => fetch(getAPI(search))
 
 export const MoviesContext = createContext({})
