@@ -1,0 +1,39 @@
+.movie {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    // margin: 16px;
+}
+
+.movie-title {
+    font-size: 12px;
+}
+
+.poster {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    min-width: 138px;
+    height: 204px;
+}
+
+.nomination-button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:hover {
+        background-color: #076d24;
+    }
+
+    &:disabled {
+        background-color: gray;
+    }
+}

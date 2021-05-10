@@ -1,0 +1,31 @@
+.nomination {
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    width: 150px;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.remove-nomination {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    background-color: red;
+    border-radius: 5px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:hover {
+        background-color: darkred;
+    }
+}
+
+.poster {
+    width: 100%;
+}

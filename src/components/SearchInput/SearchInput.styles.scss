@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex; 
+    align-items: center;
+
+    background-color: var(--background-color);
+    padding-left: 16px;
+    
+    color: var(--text-color);
+}
+
+.search-input {
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 16px;
+    width: 50%;
+    outline: none;
+    
+    &::placeholder {
+        color: var(--text-color);
+    }
+}
+

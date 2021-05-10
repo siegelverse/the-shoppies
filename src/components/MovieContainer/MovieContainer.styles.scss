@@ -1,0 +1,31 @@
+.movie-container {
+    margin: 2rem;
+    overflow: scroll;
+}
+
+.display-movies {
+    overflow: scroll;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px 16px;
+
+    margin-top: 2rem;
+
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+
+    @media screen and (max-width: 840px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+
+
+    @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+}

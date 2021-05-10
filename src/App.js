@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.styles.scss';
+import React from 'react';
+import MovieContainer from './components/MovieContainer/MovieContainer.component';
+import NominationsContainer from './components/NominationsContainer/NominationsContainer.component';
+import { MoviesProvider } from './contexts/MoviesContext';
+import Banner from './components/Banner/Banner.component';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MoviesProvider>
+        <Banner />
+        <h1 className='logo'>The Shoppies</h1>
+        <div className='container'>
+          <MovieContainer />
+          <NominationsContainer />
+        </div>
+      </MoviesProvider>
     </div>
   );
 }
